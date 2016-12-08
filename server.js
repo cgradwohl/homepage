@@ -1,3 +1,5 @@
+process.env.NODE_ENV = process.env.NODE_ENV || 'deployment';
+
 var express = require('./config/express');
 
 var app = express();
