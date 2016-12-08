@@ -4,7 +4,7 @@ development.js
 ***************************************************************
 
 
-- configuration file for the 'development' enviroment
+- enviroment configuration file for the 'development' enviroment
 ***************************************************************
 */
 module.exports = {

@@ -16,4 +16,4 @@ var app = express();
 app.listen(3000);
 module.exports = app;
 
-console.log('hello creature. i am listening on port 3000.');
+console.log('hello creature welcome to mean_structure. i am listening on port 3000.');

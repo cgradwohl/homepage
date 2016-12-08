@@ -20,3 +20,5 @@ Steps:<br />
 3. /routes/index.server.routes.js           <-- routes file
 4. /config/express.js                       <-- express config file
 5. server.js                                <-- main nodeJS file
+6. /config/env/development.js               <-- defines the development enviroment
+7. /config/config.js                        <-- loads the correct configuration file 
