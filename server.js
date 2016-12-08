@@ -1,3 +1,13 @@
+/*
+***************************************************************
+server.js
+***************************************************************
+
+
+- main server file for the node/Express web app
+***************************************************************
+*/
+
 process.env.NODE_ENV = process.env.NODE_ENV || 'deployment';
 
 var express = require('./config/express');

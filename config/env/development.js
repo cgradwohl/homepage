@@ -1,15 +1,12 @@
 /*
 ***************************************************************
-2. index.server.controller.js
+development.js
 ***************************************************************
 
 
-- Express app controller
+- configuration file for the 'development' enviroment
 ***************************************************************
 */
-
-
-
-exports.render = function(req, res) {
-    res.send('Hello Creatures');
-};
+module.exports = {
+    // development configuration options
+}

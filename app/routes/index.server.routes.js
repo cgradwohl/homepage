@@ -1,12 +1,14 @@
 /*
-***
+***************************************************************
 index.server.routes.js
-***
+***************************************************************
 
-the routing module function accepts app as argument, SO when you
-call this function you need to pass the instance of the Express application 
 
-***
+
+- the routing module function accepts app as argument, SO when
+    you call this function you need to pass the instance of the
+    Express application.
+***************************************************************
 */
 
 
