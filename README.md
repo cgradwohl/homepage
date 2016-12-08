@@ -1,6 +1,6 @@
 # mean_structure
 
-Steps:<br />
+##Steps:<br />
 0. create directory structure:
 
     /app
