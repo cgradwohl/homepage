@@ -21,6 +21,6 @@ exports.render = function(req, res) {
     req.session.lastVisit = new Date();*/ // records time of last user request
 
     res.render('index', {
-        title: 'hello creatures...'
+        title: 'hello my creatures... i love you miss patsy and taco :)'
     });
 };
