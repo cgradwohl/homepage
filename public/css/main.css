@@ -5,3 +5,11 @@ html {
   -o-background-size: cover;
   background-size: contain;
 }
+
+img {
+  max-width: 100%
+}
+
+input, textarea {
+  max-width:100%
+}
