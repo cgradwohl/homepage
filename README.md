@@ -1,7 +1,10 @@
 # mean_structure
 
 #On branch ejs_for_static:
-this a Node, Express, EJS server set up for static page server
+
+
+this a Node, Express, EJS server set up for static page server.
+Also contains a session object
 
 Steps:<br />
 0. create directory structure:
