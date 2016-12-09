@@ -1,6 +1,6 @@
 /*
 ***************************************************************
-development.js
+app/config/env/development.js
 ***************************************************************
 
 
@@ -8,5 +8,5 @@ development.js
 ***************************************************************
 */
 module.exports = {
-    // development configuration options
-}
+    sessionSecret: 'developmentSessionSecret'
+};

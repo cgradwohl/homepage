@@ -1,6 +1,6 @@
 /*
 ***************************************************************
-2. index.server.controller.js
+app/controllers/index.server.controller.js
 ***************************************************************
 
 
@@ -14,6 +14,12 @@
 
 
 exports.render = function(req, res) {
+
+    if( req.session.lastVisit ){
+        console.log(req.session.lastVisit);
+    }
+    req.session.lastVisit = new Date(); // records time of last user request
+
     res.render('index', {
         title: 'hello creatures...'
     });
