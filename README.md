@@ -1,5 +1,8 @@
 # mean_structure
 
+#On branch ejs_for_static:
+this a Node, Express, EJS server set up for static page server
+
 Steps:<br />
 0. create directory structure:
 
@@ -21,4 +24,4 @@ Steps:<br />
 4. /config/express.js                       <-- express config file
 5. server.js                                <-- main nodeJS file
 6. /config/env/development.js               <-- defines the development enviroment
-7. /config/config.js                        <-- loads the correct configuration file 
+7. /config/config.js                        <-- loads the correct configuration file
