@@ -4,7 +4,7 @@
 ***************************************************************
 
 
-- configures the Express server application module 
+- configures the Express server application module
 ***************************************************************
 */
 
@@ -30,6 +30,7 @@ module.exports = function() {
     } else if( process.env.NODE_ENV==='production' ){
         app.use(compress());
     }
+
 
     // Parse incoming request bodies in a middleware before your handlers,
     // availabe under the req.body property.
