@@ -62,8 +62,10 @@ Steps:<br />
 
 <br />    
 
-2. add Mongoose schemas
+2. add Mongoose schemas and registering the schema in the mongoose config file
 
         2.1 add ./app/models/user.server.model.js <-- mongoose db schema for mongodb
         2.2 include user.server.model.js file in the mongosoose.js configuration file
-            and make sure mongoose conig file is called first in server.js 
+            and make sure mongoose conig file is called first in server.js
+
+3. 
