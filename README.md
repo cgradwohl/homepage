@@ -54,7 +54,8 @@ Steps:<br />
         c. mongoose.js is a helpful js layer to make using the mongo shell easier, and makes
         object modeling in Node.js for mongo easier.
 
-    * PROCESS:
+    * PROCESS TO CREATE MONGODB LOCAL INSTANCE:
+
         1. $ mongod  (in one terminal shell)
         2. $ mongo   (in another terminal shell)
         3. $ nodemon server.js (in another terminal shell)   
