@@ -31,24 +31,26 @@ module.exports = function() {
         app.use(compress());
     }
 
-
     // Parse incoming request bodies in a middleware before your handlers,
     // availabe under the req.body property.
     app.use(bodyParser.urlencoded({
         extended: true
     }));
+
     app.use(bodyParser.json());
     // Lets you use HTTP verbs such as PUT or DELETE in places where the
     // client doesn't support it.
+
     app.use(methodOverride());
 
-    /*app.use(session({
+    app.use(session({
         saveUninitialized: true,
         resave           : true,
         secret           : config.sessionSecret
-    }));*/
+    }));
 
     app.set('views', './app/views');
+
     app.set('view engine', 'ejs');
 
     // the routing module function accepts app as argument

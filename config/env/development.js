@@ -9,5 +9,6 @@ app/config/env/development.js
 */
 
 module.exports = {
-    //sessionSecret: 'developmentSessionSecret'
+    db           : 'mongodb://localhost/myapp',
+    sessionSecret: 'developmentSessionSecret'
 };
