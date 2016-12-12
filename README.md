@@ -35,7 +35,7 @@ Steps:<br />
     * for heroku: use process.env.PORT
 
 <br />
-1. add a MongoDB to the stack:
+1. add a MongoDB to the stack and create MongoDB local instance:
 
         1.1 brew update, brew install mongodb, brew upgrade mongodb
         1.2 mongoose --> package.json
@@ -61,3 +61,9 @@ Steps:<br />
         3. $ nodemon server.js (in another terminal shell)   
 
 <br />    
+
+2. add Mongoose schemas
+
+        2.1 add ./app/models/user.server.model.js <-- mongoose db schema for mongodb
+        2.2 include user.server.model.js file in the mongosoose.js configuration file
+            and make sure mongoose conig file is called first in server.js 
