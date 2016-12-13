@@ -1,10 +1,22 @@
 # mean_structure
+### a generic mean app set up and config
+### backend goals
+- start a generic node, express server and connect it to a basic mongoose, mongodb local instance, which can serve static content, support users and session data
+- use passort to use twitter, facebook, google auth user management
+- use  and write jasemine unit tests
+- bundle project with travis ci and use a task manager like grunt to build the project (if its necessary?)
+- deploy to heroku :)
 
-#On branch ejs_for_static:
+### frontend goals
+- setup new Angular development or install atom packages
+- dive deep into Angular 2.3 and Typescript
+- use AOT compileing practices
+- use jasmine unit test BDD 'test first' practice
+- create a really nice ui that is dynamic, responsive, single page personal website with users, comments, posts, all saved to the db.
+- uses Angular goodies like animations etc.
 
 
-this a Node, Express, EJS server set up for static page server.
-Also contains a session object
+### casestudy: singlepost in python web2py and Vue.js vs mean_structure app 
 
 Steps:<br />
 #0. create directory structure:
