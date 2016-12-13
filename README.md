@@ -16,9 +16,9 @@
 - uses Angular goodies like animations etc.
 
 
-### casestudy: singlepost in python web2py and Vue.js vs mean_structure app 
+### casestudy: singlepost in python web2py and Vue.js vs mean_structure app
 
-Steps:<br />
+#Steps:<br />
 #0. create directory structure:
 
     /app
@@ -44,7 +44,7 @@ Steps:<br />
 
     * note at this point you should be able to serve static content. Test by deploying to Heroku!!
     * for local deployment use port 3000
-    * for heroku: use process.env.PORT
+    * for heroku use process.env.PORT
 
 <br />
 #1. add a MongoDB to the stack and create MongoDB local instance:
@@ -82,7 +82,7 @@ Steps:<br />
 
 #3.  intro to user management with node, express, mongoose, and local mongodb instance
 
-    ###CREATE USERS
+    CREATE USERS
         3.1 write the 'create()' method in users.server.controller.js file to create new user instance in the db
         3.2 add new routes file for db: users.server.routes.js --> app/routes/  
         3.3 update express config file (app/config/express.js)
@@ -91,4 +91,4 @@ Steps:<br />
 
             $ curl -X POST -H "Content-Type: application/json" -d '{"firstname":"Chris", "lastName":"Steves", "email":"dude@bro.com", "username":"dudebro", "password":"password"}' localhost:3000/users
 
-    ###FIND USERS
+    FIND USERS
