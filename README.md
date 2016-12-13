@@ -7,7 +7,7 @@ this a Node, Express, EJS server set up for static page server.
 Also contains a session object
 
 Steps:<br />
-0. create directory structure:
+#0. create directory structure:
 
     /app
         /controllers
@@ -35,7 +35,7 @@ Steps:<br />
     * for heroku: use process.env.PORT
 
 <br />
-1. add a MongoDB to the stack and create MongoDB local instance:
+#1. add a MongoDB to the stack and create MongoDB local instance:
 
         1.1 brew update, brew install mongodb, brew upgrade mongodb
         1.2 mongoose --> package.json
@@ -62,15 +62,15 @@ Steps:<br />
 
 <br />    
 
-2. add Mongoose schemas and registering the schema in the mongoose config file
+#2. add Mongoose schemas and registering the schema in the mongoose config file
 
         2.1 add ./app/models/user.server.model.js <-- mongoose db schema for mongodb
         2.2 include user.server.model.js file in the mongosoose.js configuration file
             and make sure mongoose conig file is called first in server.js
 
-3.  intro to user management with node, express, mongoose, and local mongodb instance
+#3.  intro to user management with node, express, mongoose, and local mongodb instance
 
-    #CREATE USERS
+    ###CREATE USERS
         3.1 write the 'create()' method in users.server.controller.js file to create new user instance in the db
         3.2 add new routes file for db: users.server.routes.js --> app/routes/  
         3.3 update express config file (app/config/express.js)
@@ -79,5 +79,4 @@ Steps:<br />
 
             $ curl -X POST -H "Content-Type: application/json" -d '{"firstname":"Chris", "lastName":"Steves", "email":"dude@bro.com", "username":"dudebro", "password":"password"}' localhost:3000/users
 
-    #FIND USERS
-                
+    ###FIND USERS
