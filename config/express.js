@@ -42,11 +42,11 @@ module.exports = function() {
     // client doesn't support it.
     app.use(methodOverride());
 
-    app.use(session({
+    /*app.use(session({
         saveUninitialized: true,
         resave           : true,
         secret           : config.sessionSecret
-    }));
+    }));*/
 
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
