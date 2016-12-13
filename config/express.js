@@ -15,7 +15,8 @@ morgan         = require('morgan'),
 compress       = require('compression'),
 bodyParser     = require('body-parser'),
 methodOverride = require('method-override'),
-session        = require('express-session');
+session        = require('express-session'),
+passport       = require('passport');
 
 
 module.exports = function() {
@@ -43,7 +44,7 @@ module.exports = function() {
     // client doesn't support it.
     app.use(methodOverride());
 
-    /* MUST add to package.json 
+    /* MUST add to package.json
     app.use(session({
         saveUninitialized: true,
         resave           : true,
@@ -53,10 +54,14 @@ module.exports = function() {
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
 
+    app.use(passport.initialize());
+    app.use(passport.session());
+
     // the routing module function in 'index.server.routes.js' accepts app as argument
     require('../app/routes/index.server.routes.js')(app);
     require('../app/routes/users.server.routes.js')(app);
 
     app.use(express.static('./public'));
+
     return app;
 };
