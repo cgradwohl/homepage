@@ -25,7 +25,7 @@ app.listen(port, function() {
     console.log('hello creature welcome to mean_structure. i am listening on port:' + port);
 });
 
-app.listen(port);
+// app.listen(port);
 
 module.exports = app;
 
