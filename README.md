@@ -82,13 +82,25 @@
 
 #3.  intro to user management with node, express, mongoose, and local mongodb instance
 
-    CREATE USERS
-        3.1 write the 'create()' method in users.server.controller.js file to create new user instance in the db
-        3.2 add new routes file for db: users.server.routes.js --> app/routes/  
-        3.3 update express config file (app/config/express.js)
+    1. CREATE USERS
+        3.1.1 write the 'create()' method in users.server.controller.js file to create new user instance in the db
+        3.1.2 add new routes file for db: users.server.routes.js --> app/routes/  
+        3.1.3 update express config file (app/config/express.js)
 
-        3.4 to make a POST request with correct JSON object as defined in the user.server.model.js(notice the singular grammar) file in app/models use $ curl :
+        3.1.4 to make a POST request with correct JSON object as defined in the user.server.model.js(notice the singular grammar) file in app/models use $ curl :
 
             $ curl -X POST -H "Content-Type: application/json" -d '{"firstname":"Chris", "lastName":"Steves", "email":"dude@bro.com", "username":"dudebro", "password":"password"}' localhost:3000/users
 
-    FIND USERS
+    2. FIND USERS
+
+        3.2.1
+
+    3. READING SINGLE USERS DOCUMENT
+    4. UPDATING AN EXISTING USER DOCUMENT
+    5. DELETING AN EXISTING USER DOCUMENT    
+
+#4 extending the mongoose schema
+#5 defining custom model(db) methods
+#6 model validation
+#7 using mongoose middleware
+#8 managing user auth with passport 
