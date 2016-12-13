@@ -19,12 +19,13 @@ var app      = express();
 // use the following for Heroku deployment
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
-        /*var port = process.env.PORT || 8080;
-        app.listen(port, function() {
-            console.log('hello creature welcome to mean_structure. i am listening on port:' + port);
-        });*/
+var port = process.env.PORT || 8080;
 
-app.listen(3000);
+app.listen(port, function() {
+    console.log('hello creature welcome to mean_structure. i am listening on port:' + port);
+});
+
+app.listen(port);
 
 module.exports = app;
 
