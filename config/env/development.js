@@ -10,6 +10,6 @@ app/config/env/development.js
 
 module.exports = {
     //db           : 'mongodb://localhost/myapp', // <-- use this for local devolpment
-    db : 'mongodb://heroku_b4c304kx:1iap0rq9jn0c4eqbc9rahqabbj@ds133388.mlab.com:33388/heroku_b4c304kx'
+    db : 'mongodb://admin:2chester@ds133428.mlab.com:33428/mean_structure_db'
     sessionSecret: 'developmentSessionSecret'
 };
