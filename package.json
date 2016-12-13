@@ -11,9 +11,10 @@
         "compression"     : "latest",
         "body-parser"     : "latest",
         "method-override" : "latest",
-    
+
         "ejs"             : "latest",
-        "mongoose"         : "latest"
+        "mongoose"        : "latest",
+        "passport"        : "latest"
 
     }
 }

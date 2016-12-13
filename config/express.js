@@ -8,6 +8,7 @@
 ***************************************************************
 */
 
+
 var config     = require('./config'),
 express        = require('express'),
 morgan         = require('morgan'),
@@ -42,7 +43,8 @@ module.exports = function() {
     // client doesn't support it.
     app.use(methodOverride());
 
-    /*app.use(session({
+    /* MUST add to package.json 
+    app.use(session({
         saveUninitialized: true,
         resave           : true,
         secret           : config.sessionSecret

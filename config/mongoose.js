@@ -1,3 +1,12 @@
+/*
+***************************************************************
+app/config/mongoose.js
+***************************************************************
+
+
+- configures the Mongoose Mongodb connection module
+***************************************************************
+*/
 var config = require('./config'),
 mongoose   = require('mongoose');
 

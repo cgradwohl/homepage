@@ -8,6 +8,8 @@ app/controllers/users.server.model.js
 - this is like db.table in python
 ***************************************************************
 */
+
+
 var mongoose = require('mongoose'),
     Schema   = mongoose.Schema;
 
