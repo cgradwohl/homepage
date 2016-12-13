@@ -40,7 +40,6 @@ module.exports = function() {
     app.use(bodyParser.json());
     // Lets you use HTTP verbs such as PUT or DELETE in places where the
     // client doesn't support it.
-
     app.use(methodOverride());
 
     app.use(session({
@@ -50,11 +49,11 @@ module.exports = function() {
     }));
 
     app.set('views', './app/views');
-
     app.set('view engine', 'ejs');
 
-    // the routing module function accepts app as argument
+    // the routing module function in 'index.server.routes.js' accepts app as argument
     require('../app/routes/index.server.routes.js')(app);
+    require('../app/routes/users.server.routes.js')(app);
 
     app.use(express.static('./public'));
     return app;

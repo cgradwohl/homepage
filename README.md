@@ -68,4 +68,16 @@ Steps:<br />
         2.2 include user.server.model.js file in the mongosoose.js configuration file
             and make sure mongoose conig file is called first in server.js
 
-3. 
+3.  intro to user management with node, express, mongoose, and local mongodb instance
+
+    #CREATE USERS
+        3.1 write the 'create()' method in users.server.controller.js file to create new user instance in the db
+        3.2 add new routes file for db: users.server.routes.js --> app/routes/  
+        3.3 update express config file (app/config/express.js)
+
+        3.4 to make a POST request with correct JSON object as defined in the user.server.model.js(notice the singular grammar) file in app/models use $ curl :
+
+            $ curl -X POST -H "Content-Type: application/json" -d '{"firstname":"Chris", "lastName":"Steves", "email":"dude@bro.com", "username":"dudebro", "password":"password"}' localhost:3000/users
+
+    #FIND USERS
+                
