@@ -33,5 +33,5 @@ module.exports = function() {
     });
 
     // includes the local.js strategies file to the server.js file
-    require('./strategies/local.js');
+    require('./strategies/local.js')();
 };

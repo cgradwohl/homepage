@@ -1,7 +1,8 @@
 /*
 ***************************************************************
+
 app/controllers/index.server.controller.js
-***************************************************************
+
 
 
 - Express app controller, using express res.render():
@@ -17,10 +18,11 @@ exports.render = function(req, res) {
 
     /*if( req.session.lastVisit ){
         console.log(req.session.lastVisit);
-    }
-    req.session.lastVisit = new Date();*/ // records time of last user request
+    }*/
+    //req.session.lastVisit = new Date(); // records time of last user request
 
     res.render('index', {
-        title: 'hello my creatures... '
+        title: 'hello my creatures... ',
+        userFullName: req.user ? req.user.fullName : ''
     });
 };
