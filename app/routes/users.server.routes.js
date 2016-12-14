@@ -28,11 +28,24 @@ module.exports = function(app) {
 
     //app.route('/users').post(users.create);
 
-    app.get('/oauth/facebook', passport.authenticate('facebook', {
-        failureRedirect: 'signin'
+    /*app.get('/oauth/facebook', passport.authenticate('facebook', {
+        failureRedirect: '/signin'
     }));
     app.get('/oauth/facebook/callback', passport.authenticate('facebook', {
         failureRedirect: '/signin',
         successRedirect: '/'
-    }));
+    }));*/
+
+    app.get('/auth/facebook',
+      passport.authenticate('facebook'));
+
+    app.get('/auth/facebook/callback',
+      passport.authenticate('facebook', { failureRedirect: '/signin' }),
+      function(req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/');
+      });
+
+      
+
 };
