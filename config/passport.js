@@ -32,6 +32,6 @@ module.exports = function() {
         });
     });
 
-    // includes the local.js strategies file to the server.js file 
-    reuire('./strategies/local.js');
+    // includes the local.js strategies file to the server.js file
+    require('./strategies/local.js');
 };

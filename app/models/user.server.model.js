@@ -10,7 +10,7 @@ app/controllers/users.server.model.js
 
 
 var mongoose = require('mongoose'),
-    crypto   = require('crytpto'),
+    crypto   = require('crypto'),
     Schema   = mongoose.Schema;
 
 // UserSchema Object
@@ -92,7 +92,7 @@ UserSchema.methods.authenticate = function(password) {
     return this.password === this.hashPassword(password);
 };
 
-// static method, finds an available username 
+// static method, finds an available username
 UserSchema.statics.findUniqueUsername = function(username, suffix, callback) {
     var _this = this;
     var possibleUsername = username + (suffix || '');

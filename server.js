@@ -23,12 +23,11 @@ var passport = passport();
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 8080;
 
-app.listen(port, function() {
+/*app.listen(port, function() {
     console.log('hello creature welcome to mean_structure. i am listening on port:' + port);
-});
+});*/
 
-// app.listen(port);
+app.listen(port);
+console.log('--> success. hello creature...i am running on http://localhost:' + port);
 
 module.exports = app;
-
-// console.log('--> success. hello creature...i am running on http://localhost:3000');
