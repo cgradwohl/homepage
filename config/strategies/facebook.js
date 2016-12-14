@@ -23,7 +23,7 @@ module.exports = function() {
             fullName    : profile.displayName,
 
             // --> wtf? TypeError: Cannot read property '0' of undefined
-            // -->email       : profile.emails[0].value,
+            email       : profile.emails[0].value,
 
             username    : profile.username,
             provider    : 'facebook',
@@ -31,6 +31,6 @@ module.exports = function() {
             providerData: providerData,
         };
 
-        user.saveOAuthUserProfile(req, providerUserProfile, done);
+        users.saveOAuthUserProfile(req, providerUserProfile, done);
     }));
 };

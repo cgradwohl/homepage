@@ -17,7 +17,7 @@
         "mongoose"          : "latest",
         "passport"          : "latest",
         "passport-local"    : "latest",
-        "passport-facebook" : "latest"
+        "passport-facebook" : "~1.0.3"
 
     }
 }
