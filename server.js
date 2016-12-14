@@ -27,7 +27,7 @@ var port = process.env.PORT || 8080;
     console.log('hello creature welcome to mean_structure. i am listening on port:' + port);
 });*/
 
-app.listen(port);
-console.log('--> success. hello creature...i am running on http://localhost:' + port);
+app.listen(3000);
+console.log('--> success. hello creature...i am running on http://localhost:' + 3000);
 
 module.exports = app;

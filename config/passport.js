@@ -32,6 +32,7 @@ module.exports = function() {
         });
     });
 
-    // includes the local.js strategies file to the server.js file
+    // includes the local.js, facebook.js strategies file to the server.js file
     require('./strategies/local.js')();
+    require('./strategies/facebook.js')();
 };
