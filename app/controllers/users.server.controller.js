@@ -36,6 +36,49 @@ var getErrorMessage = function(err) {
 };
 
 
+// Allows users to sign up using their profile from another provider.
+// Since users are signing up with other profiles, the profile details
+//      are already present and so must be validated differently.
+// This method accepts a user profile and then looks for an existing user
+//      with these providerId and Provider properties.
+exports.saveOAuthUserProfile = function(req, profile, done) {
+    User.findOne({
+        provider  : profile.provider,
+        providerId: profile.providerId
+    }, function(err, user) {
+        if( err ){
+            return done(err);
+        } else {
+            // if it can't find the user then it will find a unique user
+            // name using findUniqueUsername() ststic method and save a new user instance
+            if( !user ){
+                var possibleUsername = profile.username ||
+                ((profile.email) ? profile.email.split('@')[0] : '');
+
+                User.findUniqueUsername(possibleUsername, null,
+                function(availableUsername) {
+                    profile.username = availableUsername;
+                    user             = new User(profile);
+
+                    user.save(function(err) {
+                        if( err ){
+                            var message = _this.getErrorMessage(err);
+
+                            req.flash('error', message);
+                            return res.redirect('/signup');
+                        }
+                        return done(err, user);
+                    });
+                });
+            } else {
+                // if it finds the user, it calls done() with the users MongoDB document
+                return done(err, user);
+            }
+        }
+    });
+};
+
+
 exports.renderSignin = function(req, res, next) {
     if( !req.user ){
         res.render('signin', {
