@@ -103,4 +103,7 @@
 #5 defining custom model(db) methods
 #6 model validation
 #7 using mongoose middleware
-#8 managing user auth with passport 
+#8 managing user auth with passport
+    1. configure passport local strategy
+    2. adapt the user model
+    3. create auth views 
