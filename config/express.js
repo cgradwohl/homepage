@@ -49,7 +49,8 @@ module.exports = function() {
     app.use(session({
         saveUninitialized: true,
         resave           : true,
-        secret           : config.sessionSecret
+        // secret           : config.sessionSecret
+        secret           : 'taco is my creature'
     }));
 
     app.set('views', './app/views');
