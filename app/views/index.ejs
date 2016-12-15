@@ -10,25 +10,24 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <% if( userFullName ){ %>
-            <h2>Hello <%=userFullName%> </h2>
-            <a href="/signout">Sign out</a>
-        <% } else { %>
-            <a href="/signup">Signup</a>
-            <a href="/signin">Signin</a>
-        <% } %>
+
 
         <section ng-include="'example/views/example.client.view.html'"></section>
+        <section ng-include="'example2/views/example2.client.view.html'"></section>
 
         <div id="background">
             <img src="img/mountain-min.jpg" alt="">
         </div>
 
+
+
         <script type="text/javascript" src="/lib/angular/angular.js"></script>
 
         <script type="text/javascript" src="/example/example.client.module.js"></script>
+        <script type="text/javascript" src="example2/example2.client.module.js"></script>
 
         <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
+        <script type="text/javascript" src="/example2/controllers/example2.client.controller.js"></script>
 
         <script type="text/javascript" src="/application.js"></script>
     </body>
