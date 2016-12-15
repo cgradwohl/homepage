@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html xmlns:ng="http://angularjs.org">
     <head>
         <meta name=viewport content='width=700'>
         <title><%= title %></title>
@@ -18,12 +18,17 @@
             <a href="/signin">Signin</a>
         <% } %>
 
-        
+        <!--<section>
+            <input type="text" id="text1" ng-model="name">
+            <input type="text" id="text2" ng-model="name">
+        </section>-->
 
-        <br>
         <div id="background">
             <img src="img/mountain-min.jpg" alt="">
         </div>
 
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/example/example.client.module.js"></script>
+        <script type="text/javascript" src="/application.js"></script>
     </body>
 </html>
