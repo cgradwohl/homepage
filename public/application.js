@@ -1,3 +1,13 @@
+/*
+***************************************************************
+public/application.js
+
+
+
+- angular application file 
+***************************************************************
+*/
+
 var mainApplicationModuleName = 'mean';
 
 var mainApplicationModule = angular.module(mainApplicationModuleName, ['example']);

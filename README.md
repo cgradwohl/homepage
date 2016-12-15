@@ -106,4 +106,12 @@
 #8 managing user auth with passport
     1. configure passport local strategy
     2. adapt the user model
-    3. create auth views 
+    3. create auth views
+    4. using FacebookStrategy
+#9 Angular application
+    1. install angular using bower.json and .bowerrc ( directory: "public/lib")
+    2. install files and organize public directory
+        application.js    <-- main angular application files
+        /public/example/* <-- holds the example view/module
+        /public/example/views/example.client.view.html <-- angular view
+        /public/example/example.client.module.js <-- angular module for 'example' 

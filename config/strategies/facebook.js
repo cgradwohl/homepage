@@ -1,3 +1,13 @@
+/*
+***************************************************************
+config/strategies/facebook.js
+
+
+
+- configures the  facebook passport module
+***************************************************************
+*/
+
 var passport     = require('passport'),
 url              = require('url'),
 FacebookStrategy = require('passport-facebook').Strategy,
