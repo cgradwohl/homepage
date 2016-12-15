@@ -13,5 +13,6 @@ app/routes/index.server.routes.js
 
 module.exports = function(app) {
     var index = require('../controllers/index.server.controller');
+    // making get request to get the rendered index.ejs 
     app.get('/', index.render);
 }

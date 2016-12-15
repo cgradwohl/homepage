@@ -61,8 +61,8 @@ module.exports = function() {
     app.use(passport.session());
 
     // the routing module function in 'index.server.routes.js' accepts app as argument
+    // these route you to the .ejs index and user login views
     require('../app/routes/index.server.routes.js')(app);
-    require('../app/routes/users.server.routes.js')(app);
 
     app.use(express.static('./public'));
 
