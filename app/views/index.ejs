@@ -6,28 +6,32 @@
 <html xmlns:ng="http://angularjs.org">
     <head>
         <meta name=viewport content='width=700'>
-        <title><%= title %></title>
         <link rel="stylesheet" href="/css/main.css">
+        <title><%= title %></title>
+
     </head>
     <body>
 
-
         <section ng-include="'example/views/example.client.view.html'"></section>
-        <section ng-include="'example2/views/example2.client.view.html'"></section>
+        <section id="test" ng-include="'example2/views/example2.client.view.html'"></section>
+        <section ng-include="'nicePic/views/nicePic.client.view.html'"></section>
 
-        <div id="background">
+        <!--<div id="background">
             <img src="img/mountain-min.jpg" alt="">
-        </div>
+        </div>-->
 
 
 
         <script type="text/javascript" src="/lib/angular/angular.js"></script>
 
         <script type="text/javascript" src="/example/example.client.module.js"></script>
-        <script type="text/javascript" src="example2/example2.client.module.js"></script>
+        <script type="text/javascript" src="/example2/example2.client.module.js"></script>
+        <script type="text/javascript" src="/nicePic/nicePic.client.module.js"></script>
 
         <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
         <script type="text/javascript" src="/example2/controllers/example2.client.controller.js"></script>
+        <script type="text/javascript" src="/nicePic/controllers/nicePic.client.controller.js"></script>
+
 
         <script type="text/javascript" src="/application.js"></script>
     </body>
