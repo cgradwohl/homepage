@@ -26,6 +26,7 @@ section {
 }
 
 
+
 .projects {
     text-align: right;
     height: 80vh;
@@ -63,6 +64,11 @@ section {
 .content {
   display: table-cell;
   vertical-align: middle;
+}
+
+.arrow {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 h1 {
