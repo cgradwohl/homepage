@@ -22,7 +22,8 @@ section {
 .intro {
     text-align: center;
     height: 120vh;
-    background-image: url(/img/dougfir.jpg);
+    /*background-image: url(/img/dougfir.jpg);*/
+    background: #48DBE5;
 }
 
 
@@ -34,9 +35,7 @@ section {
     opacity: 1.0;
 }
 
-.projects:hover {
-    opacity: 0.8;
-}
+
 
 
 .blog {
@@ -46,9 +45,7 @@ section {
     opacity: 1.0;
 }
 
-.blog:hover {
-    opacity: 0.8;
-}
+
 
 .sayhello {
     text-align: center;
@@ -57,9 +54,7 @@ section {
     opacity: 1.0;
 }
 
-.sayhello:hover {
-    opacity: 0.8;
-}
+
 
 .content {
   display: table-cell;

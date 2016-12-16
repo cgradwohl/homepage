@@ -1,0 +1,42 @@
+body {
+  background: #48DBE5; }
+
+.container {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto; }
+
+#sun {
+  animation: sun 5s linear infinite;
+  transform-origin: 50% 50%; }
+
+@keyframes sun {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+#tree {
+  animation: tree 0.5s linear infinite; }
+
+@keyframes tree {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  25% {
+    transform: translate(1px, 1px); }
+  50% {
+    transform: translate(0, 0); }
+  75% {
+    transform: translate(1px, 1px); } }
+#cloud {
+  animation: cloud 10s linear infinite; }
+
+@keyframes cloud {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=island.css.map */
