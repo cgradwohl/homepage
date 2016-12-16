@@ -28,21 +28,36 @@ section {
 
 .projects {
     text-align: right;
-    height: 110vh;
-    background-color: green;
+    height: 80vh;
+    background-color: #71e6b5;
+    opacity: 1.0;
+}
+
+.projects:hover {
+    opacity: 0.8;
 }
 
 
 .blog {
     text-align: left;
-    height: 110vh;
-    background-color: purple;
+    height: 80vh;
+    background-color: #09b4f6;
+    opacity: 1.0;
+}
+
+.blog:hover {
+    opacity: 0.8;
 }
 
 .sayhello {
     text-align: center;
-    height: 110vh;
-    background-color: brown;
+    height: 100vh;
+    background-color: #32526e;
+    opacity: 1.0;
+}
+
+.sayhello:hover {
+    opacity: 0.8;
 }
 
 .content {
@@ -60,7 +75,7 @@ h1 {
 p {
   font-size: 1.5em;
   font-weight: 500;
-  color: #C3CAD9;
+  color: white;
 }
 
 a {
@@ -80,7 +95,7 @@ a {
 footer {
   padding: 1% 5%;
   text-align:center;
-  background-color: #373B44;
+  background-color: #3c3b3b;
   color: white;
 
   a {
