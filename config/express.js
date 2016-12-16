@@ -14,10 +14,8 @@ express        = require('express'),
 morgan         = require('morgan'),
 compress       = require('compression'),
 bodyParser     = require('body-parser'),
-methodOverride = require('method-override'),
-session        = require('express-session'),
-flash          = require('connect-flash'),
-passport       = require('passport');
+methodOverride = require('method-override');
+
 
 
 module.exports = function() {
@@ -45,20 +43,12 @@ module.exports = function() {
     // client doesn't support it.
     app.use(methodOverride());
 
-    // MUST add to package.json
-    app.use(session({
-        saveUninitialized: true,
-        resave           : true,
-        // secret           : config.sessionSecret
-        secret           : 'taco is my creature'
-    }));
+
 
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
 
-    app.use(flash());
-    app.use(passport.initialize());
-    app.use(passport.session());
+
 
     // the routing module function in 'index.server.routes.js' accepts app as argument
     // these route you to the .ejs index and user login views

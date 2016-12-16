@@ -11,12 +11,11 @@ server.js
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var mongoose = require('./config/mongoose'),
-    express  = require('./config/express'),
-    passport = require('./config/passport');
+    express  = require('./config/express');
 
 var db       = mongoose();
 var app      = express();
-var passport = passport();
+
 
 // use the following for Heroku deployment
 // set the port of our application
