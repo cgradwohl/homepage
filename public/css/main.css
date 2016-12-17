@@ -31,7 +31,7 @@ section {
 .projects {
     text-align: right;
     height: 80vh;
-    background-color: #71e6b5;
+    background: #71e6b5;
     opacity: 1.0;
 }
 
@@ -41,7 +41,7 @@ section {
 .blog {
     text-align: left;
     height: 80vh;
-    background-color: #09b4f6;
+    background: #09b4f6;
     opacity: 1.0;
 }
 

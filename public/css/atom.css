@@ -1,6 +1,6 @@
-body {
-  background-color: #FF8F8F; }
-
+/*body {
+  background-color:$color4;
+}*/
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -74,19 +74,19 @@ body {
           background-color: white;
           border-radius: 4px; }
           .sublime-text .screen .code .row p.green {
-            width: 65px;
+            width: 79px;
             background-color: #5EC3AF; }
           .sublime-text .screen .code .row p.orange {
-            width: 120px;
+            width: 111px;
             background-color: #FF8F8F; }
           .sublime-text .screen .code .row p.blue {
-            width: 91px;
+            width: 99px;
             background-color: #43C7F4; }
           .sublime-text .screen .code .row p.purple {
-            width: 39px;
+            width: 33px;
             background-color: #9E76B4; }
           .sublime-text .screen .code .row p.yellow {
-            width: 67px;
+            width: 77px;
             background-color: #FFCC4E; }
           .sublime-text .screen .code .row p.transparent {
             background-color: transparent;
