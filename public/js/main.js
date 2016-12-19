@@ -24,3 +24,8 @@ $(".hello_btn").click(function() {
     $('.sayhello h1').addClass('animated jello');
     $('.sayhello p').addClass('animated jello');
 });
+
+var vpw = $(window).width();
+var vph = $(window).height();
+
+$('.full-page').width(vph);

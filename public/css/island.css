@@ -2,9 +2,9 @@
   background: #48DBE5;
 }*/
 .container {
-  width: 800px;
+  width: 100%;
   height: 800px;
-  margin: 0 auto; }
+  margin: 0 0 0 0; }
 
 #sun {
   animation: sun 5s linear infinite;
