@@ -1,9 +1,9 @@
 .background {
-  background-color: #33ccff;
-  background: linear-gradient(top, #33ccff, #001714);
-  background: -o-linear-gradient(top, #33ccff, #001714);
-  background: -moz-linear-gradient(top, #33ccff, #001714);
-  background: -webkit-linear-gradient(top, #33ccff, #001714);
+  background-color: #373B44;
+  background: linear-gradient(top, #33ccff);
+  background: -o-linear-gradient(top, #33ccff);
+  background: -moz-linear-gradient(top, #33ccff);
+  background: -webkit-linear-gradient(top, #33ccff);
   position: absolute;
   top: 0%;
   left: 0%;
