@@ -1,3 +1,5 @@
-### Chris Gradwohl Web Site 2016
+https://github.com/theGwall
 
-this is a continuation of the mean_structure server application, in which I will use ejs to render angular modules 
+My web page built with nice CSS animations and pretty colors.
+
+Simple static file server built with node and express.
