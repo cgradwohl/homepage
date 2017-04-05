@@ -44,7 +44,8 @@ module.exports = function() {
     app.use(methodOverride());
 
 
-
+	// setting the view to index.ejs which will be handled by
+	// by the routes file below. 
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
 

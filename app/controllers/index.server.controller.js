@@ -1,7 +1,7 @@
 /*
 ***************************************************************
 
-app/controllers/index.server.controller.js
+index.server.controller.js
 
 
 
@@ -28,6 +28,10 @@ exports.render = function(req, res) {
 
     // sends the rendered view to the client
     // res.render(view [, locals] [, callback])
+
+	// finally here is where we call index.ejs
+	// the ejs is not needed since we have already
+	// set the view engine to ejs engine in express.js 
     res.render('index',{
         title: 'hello my creatures... ',
         userFullName: req.user ? req.user.fullName : ''
