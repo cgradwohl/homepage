@@ -34,7 +34,7 @@ section {
 .projects {
     text-align: right;
     height: 90vh;
-    background: #71e6b5;
+    background: #00824e;
     opacity: 1.0;
 }
 
@@ -51,9 +51,9 @@ section {
     opacity: 1.0;
 }
 
-.blog:hover {
+/*.blog:hover {
   opacity: 0.7;
-}
+}*/
 
 .sayhello {
     text-align: center;
