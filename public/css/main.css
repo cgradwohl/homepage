@@ -29,10 +29,14 @@ section {
     background-color: #373B44;
 }
 
+.intro-btn-bar {
+    text-align: center;
+    background-color: #373B44;
+}
 
 
 .projects {
-    text-align: right;
+    text-align: center;
     height: 90vh;
     background: #00824e;
     opacity: 1.0;
@@ -57,15 +61,18 @@ section {
 
 .sayhello {
     text-align: center;
-    height: 100vh;
+    height: 50vh;
     background-color: #32526e;
     opacity: 1.0;
 }
 
+.hello_btn {
+  position: absolute;
+  bottom: 20%;
+}
 
 .content {
-  display: table-cell;
-  vertical-align: middle;
+
 }
 
 .arrow {
